@@ -1,0 +1,11 @@
+<PropertyGroup>
+		  <DefineConstants>BasePath=..\..\GST.GearShift\!!!Output\GearShift\x86\_VB_SUITE_</DefineConstants>
+	  </PropertyGroup>
+<HeatDirectory OutputFile="ComponentsGenerated.wxs" DirectoryRefId="INSTALLFOLDER" ComponentGroupName="PublishedComponents" SuppressCom="true" Directory="..\..\GST.GearShift\!!!Output\GearShift\x86\_VB_SUITE_" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath" />
+
+
+
+<PropertyGroup>
+		  <DefineConstants>BasePath=..\..\GST.GearShift\ApplicationData\GearShift Technologies\GearShift</DefineConstants>
+	  </PropertyGroup>
+    <HeatDirectory OutputFile="DataComponentsGenerated.wxs" DirectoryRefId="ApplicationDataFolder" ComponentGroupName="AppDataComponents" SuppressCom="true" Directory="..\..\GST.GearShift\ApplicationData\GearShift Technologies\GearShift" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath" />

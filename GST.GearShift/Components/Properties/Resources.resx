@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ReportViewerPanel_quick_restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_quick_restart.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Stop_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Stop_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LivePreviewPanel_Pause_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LivePreviewPanel_Pause_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_OBD2CON_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_OBD2CON_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_canbusUtils" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_canbusUtils.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentSenseChannelConfigPanel_Check_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentSenseChannelConfigPanel_Check_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EZS_LOGO_SOLTEST" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EZS_LOGO_SOLTEST.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_MIL2_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_MIL2_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Cancel_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Cancel_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GearboxScaled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GearboxScaled.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Check_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Check_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_btn_ON_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_btn_ON_green.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_ResetSniffer_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_ResetSniffer_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_CAN_ON_BW_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_CAN_ON_BW_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_Refresh_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_Refresh_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_btn_ON_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_btn_ON_orange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GearboxConfigPanel_EmptyPage_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GearboxConfigPanel_EmptyPage_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogOutputsPanel_clean" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogOutputsPanel_clean.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_Delete_48x48_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_Delete_48x48_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_get_info1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_get_info1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_printer_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_printer_off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_installTests" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_installTests.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Play_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Play_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Play_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Play_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SettingsEditor_delete_user_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SettingsEditor_delete_user_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Up_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Up_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_OBD2CON_48x48_DSBLD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_OBD2CON_48x48_DSBLD.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmwareUpdateForm_Chip_256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmwareUpdateForm_Chip_256x256.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_Play_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_Play_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_navigateRight_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_navigateRight_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_btn_OFF_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_btn_OFF_orange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Up_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Up_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_btn_ON_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_btn_ON_orange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_paste_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_paste_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_AOCalibration" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_AOCalibration.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Down_icon_BW_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Down_icon_BW_64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmwareUpdateForm_Warning_256x2561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmwareUpdateForm_Warning_256x2561.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestChannel_Delete_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestChannel_Delete_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Check_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Check_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Play_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Play_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Cut_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Cut_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_btn_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_btn_ON.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_Play_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_Play_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LivePreviewPanel_Pause_16x16_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LivePreviewPanel_Pause_16x16_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Delete_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Delete_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentSenseChannelConfigPanel_Cancel_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentSenseChannelConfigPanel_Cancel_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Cancel_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Cancel_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_filesave_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_filesave_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Waiting_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Waiting_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_MIL2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_MIL2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QUIT_BTN_SOLTEST" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QUIT_BTN_SOLTEST.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Configure_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configure_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_ManualMode_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_ManualMode_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_Stop_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_Stop_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Minus_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Minus_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Empty_Page_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Empty_Page_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_DL_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_DL_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_CAN_ON_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_CAN_ON_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_LoopMode_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_LoopMode_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Delete_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Delete_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LivePreviewPanel_Stop_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LivePreviewPanel_Stop_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlueReachOfficial_297x56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueReachOfficial_297x56.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_AutoMode_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_AutoMode_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Stop_BW_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Stop_BW_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_Stop_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_Stop_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Refresh_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Refresh_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_button_cancel_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_button_cancel_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Stop_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Stop_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_AutoMode_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_AutoMode_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Stock_Index_Up_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Stock_Index_Up_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_CAR_48x48_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_CAR_48x48_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_reports.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_rename_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_rename_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Delete_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Delete_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Up_icon_BW_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Up_icon_BW_64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Down_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Down_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentSenseChannelConfigPanel_Cancel_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentSenseChannelConfigPanel_Cancel_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Down_icon_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Down_icon_64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GearboxConfigPanel_Export_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GearboxConfigPanel_Export_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_ClearDTCs_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_ClearDTCs_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_info.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentSenseChannelConfigPanel_Check_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentSenseChannelConfigPanel_Check_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Add_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Add_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GearboxConfigPanel_Import_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GearboxConfigPanel_Import_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_LOGO2_SOLTEST" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_LOGO2_SOLTEST.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_Stop_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_Stop_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Check_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Check_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="REPORTS_BTN_SOLTEST" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\REPORTS_BTN_SOLTEST.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_Delete_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_Delete_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_CAR_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_CAR_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_back.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_Save_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_Save_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SettingsEditor_add_user_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SettingsEditor_add_user_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_BRLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_BRLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentSenseChannelConfigPanel_Add_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentSenseChannelConfigPanel_Add_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LivePreviewPanel_Play_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LivePreviewPanel_Play_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_currents_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_currents_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Save_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Save_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Up_icon_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Up_icon_64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_EZSLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_EZSLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_file_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_file_save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentSenseChannelConfigPanel_Delete_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentSenseChannelConfigPanel_Delete_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CrackCode_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrackCode_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Continue_BW_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Continue_BW_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Down_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Down_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_Refresh_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_Refresh-32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LivePreviewPanel_Play_16x16_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LivePreviewPanel_Play_16x16_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_Stopped_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_Stopped_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_TRM_ENBLD_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_TRM_ENBLD_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_manual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_manual.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_MIL_48x36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_MIL_48x36.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Continue_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Continue_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Gnome_Media_Playback_Start_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Gnome_Media_Playback_Start_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Initial_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Initial_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Delete_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Delete_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_MIL_48x36_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_MIL_48x36_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_ClearDTCs_48x48_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_ClearDTCs_48x48_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_systemOptions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_systemOptions.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_Gears_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_Gears_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestChannel_Navigate_Down_20x14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestChannel_Navigate-Down-20x14.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Stock_Index_Down_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Stock_Index_Down_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_ArrowRight_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_ArrowRight_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_delete_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_delete_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_TestManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_TestManager.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_Services_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_Services_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_CAN_OFF_BW_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_CAN_OFF_BW_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_Delete_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_Delete_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_ResetSniffer_BW_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_ResetSniffer_BW_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_LoopMode_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_LoopMode_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_copy_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_copy_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_application_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_application_table.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogOutputsPanel_Calibration_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogOutputsPanel_Calibration_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gstDarkBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gstDarkBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Idle_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Idle_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_LOGO_SOLTEST" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_LOGO_SOLTEST.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Add_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Add_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gstLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gstLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_searchBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_searchBox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_printer_paper_256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_printer_paper_256x256.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmwareUpdateForm_ThumbsUp_256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmwareUpdateForm_ThumbsUp_256x256.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_Stop_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_Stop_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestChannel_Navigate_Up_20x14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestChannel_Navigate-Up-20x14.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestChannel_Check_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestChannel_Check_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Cancel_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Cancel_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_messagebox_warning_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_messagebox_warning_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Stopped_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Stopped_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Gnome_Media_Record_BW_Light_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Gnome-Media-Record_BW_Light-48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_forward.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_ManualMode_96x96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_ManualMode_96x96.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_check.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Gnome_Media_Record_BW_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Gnome-Media-Record_BW-48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Play_BW_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Play_BW_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_CAN_OFF_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_CAN_OFF_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_NewConfig_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_NewConfig_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Check_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Check_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentSenseChannelConfigPanel_Delete_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentSenseChannelConfigPanel_Delete_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_filesave_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_filesave_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmwareUpdateForm_Warning_256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmwareUpdateForm_Warning_256x256.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Stop_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Stop_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Stop_icon_64_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Stop_icon_64_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LivePreviewPanel_Stop_16x16_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LivePreviewPanel_Stop_16x16_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_TRM_DSBLD_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_TRM_DSBLD_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Gnome_Media_Playback_Stop_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Gnome_Media_Playback_Stop_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Delete_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Delete_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PTL_LOGO_SOLTEST" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PTL_LOGO_SOLTEST.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmwareUpdateForm_Start_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FirmwareUpdateForm_Start_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SettingsEditor_ResetTimer_64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SettingsEditor_ResetTimer_64x64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlPanel_Stop_icon_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ControlPanel_Stop_icon_64.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_btn_OFF_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_btn_OFF_orange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestScriptEditorPanel_Add_32x32_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestScriptEditorPanel_Add_32x32_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InitialTestPanel_navigateRight_128x128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialTestPanel_navigateRight_128x128.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ObdPanel_DL_48x48_BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ObdPanel_DL_48x48_BW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreenPanel_SUPPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreenPanel_SUPPORT.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Cancel_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Cancel_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Usb_48x48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usb_48x48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportViewerPanel_Empty_Page_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReportViewerPanel_Empty_Page_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BluereachReportLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BluereachReportLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnalogInputChannelConfigPanel_Add_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnalogInputChannelConfigPanel_Add_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentSenseChannelConfigPanel_Add_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentSenseChannelConfigPanel_Add_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CanPanel_Gnome_Media_Record_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanPanel_Gnome_Media_Record_48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AO-Calibration-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AO-Calibration-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="App-icon-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\App-icon-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Can-Bus-Utility-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Can-Bus-Utility-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Graph-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graph-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Setting-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Setting-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tech-Support-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tech-Support-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Test-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Test-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Test-Manager-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Test-Manager-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GST_ReportLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GST_ReportLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

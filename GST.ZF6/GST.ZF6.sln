@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PanelTest", "PanelTest\PanelTest.csproj", "{B954C7A6-F853-429C-8C67-9B24D394F06A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma Bare", "CommLibTest\Enigma Bare.csproj", "{B76CE0D8-4935-4258-A91A-78190875415A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soko.Common", "..\Libraries\Soko.Common\Soko.Common.csproj", "{1A483848-D0A0-44DA-9CD7-D0C0F2A7E973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibUsbDotNet", "..\Libraries\ThirdParty\LibWinUsb\LibUsbDotNet.csproj", "{0811C5F3-F00C-4A48-9E1A-C4B4DA8CD336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GST.ZF6.Components", "Components\GST.ZF6.Components.csproj", "{E7232862-60FA-4C3D-AF16-A73B4E1DAA28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B954C7A6-F853-429C-8C67-9B24D394F06A}.Debug|x86.ActiveCfg = Debug|x86
+		{B954C7A6-F853-429C-8C67-9B24D394F06A}.Debug|x86.Build.0 = Debug|x86
+		{B954C7A6-F853-429C-8C67-9B24D394F06A}.Release|x86.ActiveCfg = Release|x86
+		{B954C7A6-F853-429C-8C67-9B24D394F06A}.Release|x86.Build.0 = Release|x86
+		{B76CE0D8-4935-4258-A91A-78190875415A}.Debug|x86.ActiveCfg = Debug|x86
+		{B76CE0D8-4935-4258-A91A-78190875415A}.Debug|x86.Build.0 = Debug|x86
+		{B76CE0D8-4935-4258-A91A-78190875415A}.Release|x86.ActiveCfg = Release|x86
+		{B76CE0D8-4935-4258-A91A-78190875415A}.Release|x86.Build.0 = Release|x86
+		{1A483848-D0A0-44DA-9CD7-D0C0F2A7E973}.Debug|x86.ActiveCfg = Debug|x86
+		{1A483848-D0A0-44DA-9CD7-D0C0F2A7E973}.Debug|x86.Build.0 = Debug|x86
+		{1A483848-D0A0-44DA-9CD7-D0C0F2A7E973}.Release|x86.ActiveCfg = Release|x86
+		{1A483848-D0A0-44DA-9CD7-D0C0F2A7E973}.Release|x86.Build.0 = Release|x86
+		{0811C5F3-F00C-4A48-9E1A-C4B4DA8CD336}.Debug|x86.ActiveCfg = Debug|x86
+		{0811C5F3-F00C-4A48-9E1A-C4B4DA8CD336}.Debug|x86.Build.0 = Debug|x86
+		{0811C5F3-F00C-4A48-9E1A-C4B4DA8CD336}.Release|x86.ActiveCfg = Release|x86
+		{0811C5F3-F00C-4A48-9E1A-C4B4DA8CD336}.Release|x86.Build.0 = Release|x86
+		{E7232862-60FA-4C3D-AF16-A73B4E1DAA28}.Debug|x86.ActiveCfg = Debug|x86
+		{E7232862-60FA-4C3D-AF16-A73B4E1DAA28}.Debug|x86.Build.0 = Debug|x86
+		{E7232862-60FA-4C3D-AF16-A73B4E1DAA28}.Release|x86.ActiveCfg = Release|x86
+		{E7232862-60FA-4C3D-AF16-A73B4E1DAA28}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A6CADBF-13FA-43C3-9086-B86B4BF19F38}
+	EndGlobalSection
+EndGlobal

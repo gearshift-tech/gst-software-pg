@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestScript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Gearbox>
+    <FileVersionSaved>1</FileVersionSaved>
+    <_analogueInputs>
+      <AIChannel>
+        <ValueType>Pressure</ValueType>
+        <InputIndex>0</InputIndex>
+        <Label>Channel 00</Label>
+        <MinValueBaseUnit>0</MinValueBaseUnit>
+        <MaxValueBaseUnit>1</MaxValueBaseUnit>
+      </AIChannel>
+      <AIChannel>
+        <ValueType>Pressure</ValueType>
+        <InputIndex>1</InputIndex>
+        <Label>Channel 01</Label>
+        <MinValueBaseUnit>0</MinValueBaseUnit>
+        <MaxValueBaseUnit>1</MaxValueBaseUnit>
+      </AIChannel>
+      <AIChannel>
+        <ValueType>Pressure</ValueType>
+        <InputIndex>2</InputIndex>
+        <Label>Channel 02</Label>
+        <MinValueBaseUnit>0</MinValueBaseUnit>
+        <MaxValueBaseUnit>1</MaxValueBaseUnit>
+      </AIChannel>
+      <AIChannel>
+        <ValueType>Pressure</ValueType>
+        <InputIndex>3</InputIndex>
+        <Label>Channel 03</Label>
+        <MinValueBaseUnit>0</MinValueBaseUnit>
+        <MaxValueBaseUnit>1</MaxValueBaseUnit>
+      </AIChannel>
+      <AIChannel>
+        <ValueType>Pressure</ValueType>
+        <InputIndex>4</InputIndex>
+        <Label>Channel 04</Label>
+        <MinValueBaseUnit>0</MinValueBaseUnit>
+        <MaxValueBaseUnit>1</MaxValueBaseUnit>
+      </AIChannel>
+      <AIChannel>
+        <ValueType>Pressure</ValueType>
+        <InputIndex>5</InputIndex>
+        <Label>Channel 05</Label>
+        <MinValueBaseUnit>0</MinValueBaseUnit>
+        <MaxValueBaseUnit>1</MaxValueBaseUnit>
+      </AIChannel>
+      <AIChannel>
+        <ValueType>Pressure</ValueType>
+        <InputIndex>6</InputIndex>
+        <Label>Channel 06</Label>
+        <MinValueBaseUnit>0</MinValueBaseUnit>
+        <MaxValueBaseUnit>1</MaxValueBaseUnit>
+      </AIChannel>
+      <AIChannel>
+        <ValueType>Pressure</ValueType>
+        <InputIndex>7</InputIndex>
+        <Label>Channel 07</Label>
+        <MinValueBaseUnit>0</MinValueBaseUnit>
+        <MaxValueBaseUnit>1</MaxValueBaseUnit>
+      </AIChannel>
+    </_analogueInputs>
+    <PressureVariationTolerance>0.1</PressureVariationTolerance>
+    <IgnorePressureLessThan_BaseUnit>0.2</IgnorePressureLessThan_BaseUnit>
+    <PressureDisplayChannelsSet>
+      <Channels />
+      <ChannelsMaxCount>14</ChannelsMaxCount>
+      <ChannelsCommonMinMaxValues>false</ChannelsCommonMinMaxValues>
+      <TypeName />
+    </PressureDisplayChannelsSet>
+    <CurrentDisplayChannelsSet>
+      <Channels />
+      <ChannelsMaxCount>18</ChannelsMaxCount>
+      <ChannelsCommonMinMaxValues>true</ChannelsCommonMinMaxValues>
+      <TypeName />
+    </CurrentDisplayChannelsSet>
+    <Name>ZF6HP26_CM</Name>
+    <Manufacturer>ZF</Manufacturer>
+    <Model>6HP26_CM</Model>
+    <SerializedPicture>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</SerializedPicture>
+    <PwmFrequencyHz>200</PwmFrequencyHz>
+    <ControllerType>ZF_6HPxx_1911M</ControllerType>
+  </Gearbox>
+  <FrameSet />
+  <Guid>d2050573-e8d7-48aa-b719-82ca43da6eaa</Guid>
+  <HasConsistentMasterData>false</HasConsistentMasterData>
+  <Name>ZF6HP26CM</Name>
+  <SerializedScreenLayout>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Layout&gt;
+  &lt;Window Guid="17fa7f49-3d14-4e4f-ba28-88f7a6ae8c93" LastFocused="129641873499922440" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="550, 380.6344" DocumentWindowGroupGuid="4aec9f1f-5d14-4786-9650-ab9a6dad2c75" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="722ec64d-cd54-4e61-9fed-9b8762362a02" LastFocused="132215077992579807" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="854.1407, 380.6344" DocumentWindowGroupGuid="4aec9f1f-5d14-4786-9650-ab9a6dad2c75" DocumentIndexInWindowGroup="0" DocumentSplitPath="0|0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="49b87529-a5f2-4aa2-9331-1084f33e9ba1" LastFocused="129871286481938950" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="550, 380.6344" DocumentWindowGroupGuid="7ceba3bb-cb2a-4e7d-8bf7-313bba0332ff" DocumentIndexInWindowGroup="0" DocumentSplitPath="1" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="380f02a6-0fbe-437b-bf90-d2cff9b9f499" LastFocused="132215078027883994" DockedSize="233" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="200, 650" LastOpenDockSituation="Docked" LastFixedDockSituation="Docked" LastFixedDockLocation="Left" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="1" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="c0746e2d-3471-4994-9e29-96f4e30486b2" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="00000000-0000-0000-0000-000000000000" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="3802c232-2ca9-4963-b193-29df020e58a2" LastFocused="0" DockedSize="98" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="250, 400" LastOpenDockSituation="Docked" LastFixedDockSituation="Docked" LastFixedDockLocation="Bottom" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="-1" DockedWorkingSize="250, 400" DockedWindowGroupGuid="d16cd9e0-bc63-4fa8-ab9d-33884ca06283" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="00000000-0000-0000-0000-000000000000" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="bfc0300d-18d2-4754-a184-c28c979351bf" LastFocused="129871286669939213" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="245.859314, 380.6344" DocumentWindowGroupGuid="8df89eb7-bba9-4276-b7b5-a568ce068765" DocumentIndexInWindowGroup="0" DocumentSplitPath="0|1" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="efebc201-c614-4c49-a36f-7cd709919aff" LastFocused="0" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="550, 380.6344" DocumentWindowGroupGuid="8facd8dd-2151-47d6-8887-a5b25f998b65" DocumentIndexInWindowGroup="10" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Container Dock="3" ContentSize="233"&gt;
+    &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
+      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="c0746e2d-3471-4994-9e29-96f4e30486b2" Collapsed="0" SelectedControl="380f02a6-0fbe-437b-bf90-d2cff9b9f499"&gt;
+        &lt;Controls&gt;
+          &lt;Control Guid="380f02a6-0fbe-437b-bf90-d2cff9b9f499" /&gt;
+        &lt;/Controls&gt;
+      &lt;/ControlLayoutSystem&gt;
+    &lt;/SplitLayoutSystem&gt;
+  &lt;/Container&gt;
+  &lt;DocumentContainer Dock="5"&gt;
+    &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
+      &lt;SplitLayoutSystem WorkingSize="550, 380.6344" SplitMode="1"&gt;
+        &lt;ControlLayoutSystem WorkingSize="854.1407, 380.6344" Guid="4aec9f1f-5d14-4786-9650-ab9a6dad2c75" Collapsed="0" SelectedControl="722ec64d-cd54-4e61-9fed-9b8762362a02"&gt;
+          &lt;Controls&gt;
+            &lt;Control Guid="722ec64d-cd54-4e61-9fed-9b8762362a02" /&gt;
+          &lt;/Controls&gt;
+        &lt;/ControlLayoutSystem&gt;
+        &lt;ControlLayoutSystem WorkingSize="245.859314, 380.6344" Guid="8df89eb7-bba9-4276-b7b5-a568ce068765" Collapsed="0" SelectedControl="bfc0300d-18d2-4754-a184-c28c979351bf"&gt;
+          &lt;Controls&gt;
+            &lt;Control Guid="bfc0300d-18d2-4754-a184-c28c979351bf" /&gt;
+          &lt;/Controls&gt;
+        &lt;/ControlLayoutSystem&gt;
+      &lt;/SplitLayoutSystem&gt;
+    &lt;/SplitLayoutSystem&gt;
+  &lt;/DocumentContainer&gt;
+&lt;/Layout&gt;</SerializedScreenLayout>
+</TestScript>

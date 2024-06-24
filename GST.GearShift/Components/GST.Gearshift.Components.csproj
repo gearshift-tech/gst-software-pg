@@ -1,0 +1,1188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44D4AC8D-4A85-4FD8-8CAF-A2749FFACA9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GST.Gearshift.Components</RootNamespace>
+    <AssemblyName>GST.Gearshift.Components</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_DYNO|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_DYNO_SUITE_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug_VB|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_VB_SUITE_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_DYNO|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_DYNO_SUITE_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release_VB|x86' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_VB_SUITE_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_SolTester|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_SOL_TESTER_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_SolTester|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_SOL_TESTER_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_DYNO|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug_DYNO\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_DYNO_SUITE_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_VB|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug_VB\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_VB_SUITE_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_DYNO|x64'">
+    <OutputPath>bin\x64\Release_DYNO\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_DYNO_SUITE_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_VB|x64'">
+    <OutputPath>bin\x64\Release_VB\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_VB_SUITE_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_SolTester|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug_SolTester\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_SOL_TESTER_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_SolTester|x64'">
+    <OutputPath>bin\x64\Release_SolTester\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_SOL_TESTER_</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controls\CanEntryEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CanEntryEditor.designer.cs">
+      <DependentUpon>CanEntryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Gauges\BarGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Gauges\BarGauge.designer.cs">
+      <DependentUpon>BarGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Gauges\SpeedsGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Gauges\SpeedsGauge.designer.cs">
+      <DependentUpon>SpeedsGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Gauges\GaugeBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Gauges\GaugeBar.designer.cs">
+      <DependentUpon>GaugeBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Gauges\SolenoidGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Gauges\SolenoidGauge.designer.cs">
+      <DependentUpon>SolenoidGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CAN\CANPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CAN\CANPanel.Designer.cs">
+      <DependentUpon>CANPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CAN\CanTraceSaveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CAN\CanTraceSaveDialog.Designer.cs">
+      <DependentUpon>CanTraceSaveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CAN\GaugeDataEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CAN\GaugeDataEditor.Designer.cs">
+      <DependentUpon>GaugeDataEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CAN\NissanRE5InitPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CAN\NissanRE5InitPanel.designer.cs">
+      <DependentUpon>NissanRE5InitPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CAN\CanCorderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CAN\CanCorderPanel.designer.cs">
+      <DependentUpon>CanCorderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\AnalogOutputsPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\AnalogOutputsPanel.Designer.cs">
+      <DependentUpon>AnalogOutputsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\ImportGearboxConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\ImportGearboxConfigForm.Designer.cs">
+      <DependentUpon>ImportGearboxConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\LivePreviewPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\LivePreviewPanel.Designer.cs">
+      <DependentUpon>LivePreviewPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\InitialTestPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\InitialTestPanel.designer.cs">
+      <DependentUpon>InitialTestPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\CurrentDisplayConfigPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\CurrentDisplayConfigPanel.designer.cs">
+      <DependentUpon>CurrentDisplayConfigPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\PressureDisplayConfigPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\PressureDisplayConfigPanel.Designer.cs">
+      <DependentUpon>PressureDisplayConfigPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\ReportExplorerRenameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\ReportExplorerRenameDialog.Designer.cs">
+      <DependentUpon>ReportExplorerRenameDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\ReportViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\SetMasterDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\SetMasterDataForm.Designer.cs">
+      <DependentUpon>SetMasterDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\TestControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\TestControlPanel.Designer.cs">
+      <DependentUpon>TestControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\TestScriptEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\TestScriptEditor.Designer.cs">
+      <DependentUpon>TestScriptEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FirmwareUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FirmwareUpdateForm.Designer.cs">
+      <DependentUpon>FirmwareUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeScreenPanel_SolTester.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeScreenPanel_SolTester.Designer.cs">
+      <DependentUpon>HomeScreenPanel_SolTester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeScreenPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeScreenPanel.Designer.cs">
+      <DependentUpon>HomeScreenPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsEditor.Designer.cs">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\USB\DAQ_Event.cs" />
+    <Compile Include="Interfaces\USB\DAQ_EventManager.cs" />
+    <Compile Include="Interfaces\USB\TestScriptReportHeader.cs" />
+    <Compile Include="Interfaces\USB\GearShiftUsb.AIChannel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ReportPrinting\FooterPrintBlock.cs" />
+    <Compile Include="Forms\DAQ\GearboxConfigPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\GearboxConfigPanel.designer.cs">
+      <DependentUpon>GearboxConfigPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ReportPrinting\HeaderPrintBlock.cs" />
+    <Compile Include="Forms\DAQ\InitialTestDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\InitialTestDisplay.Designer.cs">
+      <DependentUpon>InitialTestDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DAQ\InitialTestResult.cs" />
+    <Compile Include="Forms\DAQ\ListBoxMultiReportItem.cs" />
+    <Compile Include="Forms\DAQ\ReportExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DAQ\ReportExplorer.Designer.cs">
+      <DependentUpon>ReportExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\USB\CanEntry.cs" />
+    <Compile Include="Interfaces\USB\CANTrace.cs" />
+    <Compile Include="Interfaces\USB\CAN_GearboxGearData.cs" />
+    <Compile Include="Interfaces\USB\CAN_GearboxSensorsConfig.cs" />
+    <Compile Include="Interfaces\USB\DisplayChannel.cs" />
+    <Compile Include="Interfaces\USB\DisplayChannelsSet.cs" />
+    <Compile Include="Interfaces\USB\GearboxCANConfig.cs" />
+    <Compile Include="Interfaces\USB\GearboxConfig.cs" />
+    <Compile Include="Interfaces\USB\GearShiftUsb.cs" />
+    <Compile Include="Interfaces\USB\GearShiftUsb_CAN.cs" />
+    <Compile Include="Interfaces\USB\GearShiftUsb_dllImports.cs" />
+    <Compile Include="Interfaces\USB\GearState.cs" />
+    <Compile Include="Interfaces\USB\Measurement.cs" />
+    <Compile Include="Interfaces\USB\OBD_ECU.cs" />
+    <Compile Include="Interfaces\USB\OBD_Messenger.cs" />
+    <Compile Include="Interfaces\USB\OBD_TroubleCode.cs" />
+    <Compile Include="Interfaces\USB\OBD_TroubleCodesSet.cs" />
+    <Compile Include="Interfaces\USB\TestScript.cs" />
+    <Compile Include="Interfaces\USB\TestScriptFrame.cs" />
+    <Compile Include="Interfaces\USB\TestScriptReport.cs" />
+    <Compile Include="Interfaces\USB\UsbStructs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ReportPrinting\DataGridViewExtentions.cs" />
+    <Compile Include="Utilities\ReportPrinting\DocumentMetrics.cs" />
+    <Compile Include="Utilities\ReportPrinting\GridDrawer.cs" />
+    <Compile Include="Utilities\ReportPrinting\Partition.cs" />
+    <Compile Include="Utilities\ReportPrinting\PartitionBounds.cs" />
+    <Compile Include="Utilities\ReportPrinting\PrintBlock.cs" />
+    <Compile Include="Utilities\ReportPrinting\PrintingDataGridViewProvider.cs" />
+    <Compile Include="Utilities\ReportPrinting\TitlePrintBlock.cs" />
+    <Compile Include="Utilities\Settings.cs" />
+    <Compile Include="Utilities\UnitConversion.cs" />
+    <Compile Include="Utilities\UserVerification.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CanEntryEditor.resx">
+      <DependentUpon>CanEntryEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Gauges\SolenoidGauge.resx">
+      <DependentUpon>SolenoidGauge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Gauges\SpeedsGauge.resx">
+      <DependentUpon>SpeedsGauge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CAN\CANPanel.resx">
+      <DependentUpon>CANPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CAN\GaugeDataEditor.resx">
+      <DependentUpon>GaugeDataEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CAN\NissanRE5InitPanel.resx">
+      <DependentUpon>NissanRE5InitPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\AnalogOutputsPanel.resx">
+      <DependentUpon>AnalogOutputsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\CurrentDisplayConfigPanel.resx">
+      <DependentUpon>CurrentDisplayConfigPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\GearboxConfigPanel.resx">
+      <DependentUpon>GearboxConfigPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\ImportGearboxConfigForm.resx">
+      <DependentUpon>ImportGearboxConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\InitialTestDisplay.resx">
+      <DependentUpon>InitialTestDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\InitialTestPanel.resx">
+      <DependentUpon>InitialTestPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\LivePreviewPanel.resx">
+      <DependentUpon>LivePreviewPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\PressureDisplayConfigPanel.resx">
+      <DependentUpon>PressureDisplayConfigPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\ReportExplorer.resx">
+      <DependentUpon>ReportExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\ReportExplorerRenameDialog.resx">
+      <DependentUpon>ReportExplorerRenameDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\TestControlPanel.resx">
+      <DependentUpon>TestControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DAQ\TestScriptEditor.resx">
+      <DependentUpon>TestScriptEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FirmwareUpdateForm.resx">
+      <DependentUpon>FirmwareUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeScreenPanel_SolTester.resx">
+      <DependentUpon>HomeScreenPanel_SolTester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeScreenPanel.resx">
+      <DependentUpon>HomeScreenPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsEditor.resx">
+      <DependentUpon>SettingsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\Libraries\ThirdParty\DotNetZip\zip-v1.9\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=16.3460.0.21, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\ThirdParty\uiLib\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=16.3460.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\ThirdParty\uiLib\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Base, Version=16.3460.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\ThirdParty\uiLib\Syncfusion.Tools.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Windows, Version=16.3460.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libraries\ThirdParty\uiLib\Syncfusion.Tools.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Add_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Add_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Cancel_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Cancel_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Check_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Check_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Check_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Delete_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Delete_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Empty_Page_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_filesave_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Folder_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Folder_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_New_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_New_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Save_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_SaveAs_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Add_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Cancel_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Check_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Check_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Delete_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogOutputsPanel_Calibration_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogOutputsPanel_clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_btn_OFF_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_btn_ON_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_CAN_OFF_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_CAN_OFF_BW_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_CAN_ON_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_CAN_ON_BW_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_file_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Gnome_Media_Playback_Start_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Gnome_Media_Playback_Stop_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Gnome_Media_Record_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Gnome-Media-Record_BW_Light-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Gnome-Media-Record_BW-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_NewConfig_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Play_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Play_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Play_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Play_BW_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_ResetSniffer_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_ResetSniffer_BW_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Stock_Index_Down_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Stock_Index_Up_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Stop_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Stop_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Stop_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_Stop_BW_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_TRM_DSBLD_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanPanel_TRM_ENBLD_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_AutoMode_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Down_icon_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Down_icon_BW_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Idle_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Initial_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_LoopMode_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_ManualMode_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Stop_icon_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Stop_icon_64_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Stopped_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Up_icon_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel_Up_icon_BW_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurrentSenseChannelConfigPanel_Add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurrentSenseChannelConfigPanel_Add_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurrentSenseChannelConfigPanel_Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurrentSenseChannelConfigPanel_Cancel_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurrentSenseChannelConfigPanel_Check_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurrentSenseChannelConfigPanel_Check_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurrentSenseChannelConfigPanel_Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CurrentSenseChannelConfigPanel_Delete_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_AOCalibration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_BRLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_canbusUtils.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_EZSLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_HydraCuntLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_installTests.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_LogoPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_obdUtils.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_resourceDocs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_SUPPORT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_systemOptions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_TICK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_UNTICK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestChannel_Check_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestChannel_Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestChannel_Navigate-Down-20x14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestChannel_Navigate-Up-20x14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_ArrowRight_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_AutoMode_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Delete_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Delete_48x48_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Gears_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_LoopMode_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_ManualMode_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_navigateRight_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_navigateRight_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Refresh_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Services_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Stop_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Stop_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Stopped_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxScaled.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_btn_OFF_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_btn_ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_btn_ON_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_btn_ON_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_CAR_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_CAR_48x48_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_ClearDTCs_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_ClearDTCs_48x48_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_DL_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_DL_48x48_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_messagebox_warning_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_MIL_48x36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_MIL_48x36_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_MIL2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_MIL2_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_OBD2CON_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_OBD2CON_48x48_DSBLD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_Play_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_Play_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_Stop_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObdPanel_Stop_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_application_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_button_cancel_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_currents_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_Empty_Page_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_filesave_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_get_info1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_printer_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_printer_paper_256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_quick_restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_Refresh-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_Save_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsEditor_add_user_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsEditor_delete_user_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Add_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Cancel_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Check_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Check_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_copy_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Cut_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Delete_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Down_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Down_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Empty_Page_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_filesave_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_paste_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Up_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Up_32x32_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_VBDaqLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_HydratestLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirmwareUpdateForm_Chip_256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_EmptyPage_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Export_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GearboxConfigPanel_Import_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueReachOfficial_297x56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalogInputChannelConfigPanel_Minus_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_TestManager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportViewerPanel_rename_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsEditor_ResetTimer_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Delete_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestScriptEditorPanel_Save_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirmwareUpdateForm_Start_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirmwareUpdateForm_Warning_256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirmwareUpdateForm_Warning_256x2561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirmwareUpdateForm_ThumbsUp_256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BluereachReportLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configure_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue_BW_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrackCode_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usb_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waiting_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreenPanel_searchBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LivePreviewPanel_Play_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LivePreviewPanel_Pause_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LivePreviewPanel_Stop_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LivePreviewPanel_Pause_16x16_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LivePreviewPanel_Play_16x16_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LivePreviewPanel_Stop_16x16_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_LOGO_SOLTEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PTL_LOGO_SOLTEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BR_LOGO2_SOLTEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GST.ZF6\Components\GST.ZF6.Components.csproj">
+      <Project>{e7232862-60fa-4c3d-af16-a73b4e1daa28}</Project>
+      <Name>GST.ZF6.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Soko.Common\Soko.Common.csproj">
+      <Project>{1a483848-d0a0-44da-9cd7-d0c0f2a7e973}</Project>
+      <Name>Soko.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\ThirdParty\ExtendedListBoxControl\ExtendedListBoxControl.csproj">
+      <Project>{7f49ca89-8f2a-4598-96d2-a414a73d4c9f}</Project>
+      <Name>ExtendedListBoxControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\ThirdParty\LibWinUsb\LibUsbDotNet.csproj">
+      <Project>{0811c5f3-f00c-4a48-9e1a-c4b4da8cd336}</Project>
+      <Name>LibUsbDotNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\ThirdParty\XPTable\XPTable.csproj">
+      <Project>{e914dc2e-70f1-4491-bc2f-527a2d9fff01}</Project>
+      <Name>XPTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\ThirdParty\ZedGraph\ZedGraph.csproj">
+      <Project>{2541686b-1673-43bf-af89-3163945db009}</Project>
+      <Name>ZedGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Soko_CanCave\Components\Soko.CanCave.Components.csproj">
+      <Project>{61e875bf-dd96-4d8b-a648-7083a2d565f1}</Project>
+      <Name>Soko.CanCave.Components</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REPORTS_BTN_SOLTEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QUIT_BTN_SOLTEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EZS_LOGO_SOLTEST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gstDarkLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gstDarkBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gstLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AO-Calibration-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App-icon-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Can-Bus-Utility-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graph-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tech-Support-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test-Manager-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\OBD\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GST__ReportLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GST_ReportLogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

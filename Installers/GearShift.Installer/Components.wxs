@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <Fragment>
+    <!--Product Components-->
+    <ComponentGroup Id="ProductComponents">
+
+      <!--Shortcut-->
+    <ComponentRef Id="MainAppShortcut"/>
+	<ComponentRef Id="EditorShortcut"/>
+	<ComponentRef Id="ApplicationShortcutDesktop"/>
+		<ComponentRef Id="EditorShortcutDesktop"/>
+    </ComponentGroup>
+
+    <!--Installed files-->
+    <DirectoryRef Id="INSTALLFOLDER" FileSource="..\..\GST.GearShift\!!!Output\GearShift\$(var.Platform)\_VB_SUITE_\">
+		
+		<!--Shortcut to main application-->
+      <Component Id="MainAppShortcut" Guid="{DB7E5351-B984-4AE5-8FD4-C490FC32E00D}">
+            <Shortcut Id="MainAppShortcut" 
+					  Name="GearShift"  
+					  Target="[INSTALLFOLDER]GearShift.exe"
+					  Directory="InstallProgramMenuFolder"
+					  WorkingDirectory="INSTALLFOLDER"
+					  Icon="icon.ico"
+					  />
+		  
+		  <!--Unique Key for this component/shortcut-->
+		  <RegistryValue Id="RegShortcutKey" Root="HKCU" Key="SOFTWARE\$(loc.ProductNameFolder)" Name="Shortcut" Value="1" Type="integer" KeyPath="yes"/>
+        <!--Remove start menu items-->
+        <RemoveFolder Id="RemoveStartMenu" Directory="InstallProgramMenuFolder" On="uninstall"/>
+      </Component>
+
+		<!--Shortcut to Editor application-->
+		<Component Id="EditorShortcut" Guid="{eb1e6612-26cf-4a9b-bf54-056c61f14547}">
+			<Shortcut Id="EditorShortcut"
+					  Name="GearShift Editor"
+					  Target="[INSTALLFOLDER]GearShift Editor.exe"
+					  Directory="InstallProgramMenuFolder"
+					  WorkingDirectory="INSTALLFOLDER"
+					  Icon="Editoricon.ico"
+					  />
+
+			<!--Unique Key for this component/shortcut-->
+			<RegistryValue Id="RegShortcutKeyEditor" Root="HKCU" Key="SOFTWARE\$(loc.ProductNameFolder)" Name="EditorShortcut" Value="1" Type="integer" KeyPath="yes"/>
+
+		</Component>
+    </DirectoryRef>
+
+	  <DirectoryRef Id="DesktopFolder">
+		  <!--Shortcut to main application-->
+		  <Component Id="ApplicationShortcutDesktop" Guid="e35ab278-6950-469a-8ae4-9628142c49fb">
+			  <Shortcut Id="ApplicationDesktopShortcut"
+						Name="GearShift"						
+						Target="[INSTALLFOLDER]GearShift.exe"
+						WorkingDirectory="INSTALLFOLDER"
+						Icon="icon.ico"/>
+			  <RegistryValue Id="RegShortcutKeyDesktop" 
+							Root="HKCU"
+							 Key="SOFTWARE\$(loc.ProductNameFolder)"
+							 Name="DesktopShortcut"
+							 Type="integer"
+							 Value="1"
+							 KeyPath="yes" />
+		  </Component>
+		  <!--Shortcut to Editor application-->
+		  <Component Id="EditorShortcutDesktop" Guid="3b9c3fd3-1536-4b01-b1d8-fdb0c76eaf71">
+			  <Shortcut Id="EditorApplicationDesktopShortcut"
+						Name="GearShift Editor"
+						Target="[INSTALLFOLDER]GearShift Editor.exe"
+						WorkingDirectory="INSTALLFOLDER"
+						Icon="Editoricon.ico"/>
+			  <RegistryValue Id="RegShortcutKeyEditorDesktop"
+							Root="HKCU"
+							 Key="SOFTWARE\$(loc.ProductNameFolder)"
+							 Name="DesktopEditorShortcut"
+							 Type="integer"
+							 Value="1"
+							 KeyPath="yes" />
+		  </Component>
+	  </DirectoryRef>
+
+  </Fragment>
+
+</Wix>
+
+
+
+
+	

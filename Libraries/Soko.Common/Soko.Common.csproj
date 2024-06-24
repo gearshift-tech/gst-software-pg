@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A483848-D0A0-44DA-9CD7-D0C0F2A7E973}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Soko.Common</RootNamespace>
+    <AssemblyName>Soko.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Common\DataGridNumericTextboxCell.cs" />
+    <Compile Include="Common\DataGridNumericTextBoxColumn.cs" />
+    <Compile Include="Common\DTC_Database.cs" />
+    <Compile Include="Common\EventLogger.cs" />
+    <Compile Include="Common\CommonExtensions.cs" />
+    <Compile Include="Common\FILECONVERTER_VspyToPcan.cs" />
+    <Compile Include="Common\GraphicsExtensions.cs" />
+    <Compile Include="Common\HPTimer.cs" />
+    <Compile Include="Common\ListBoxFileItem.cs" />
+    <Compile Include="Common\ListBoxMultiFileItem.cs" />
+    <Compile Include="Common\MouseFilter.cs" />
+    <Compile Include="Common\ObjectCopier.cs" />
+    <Compile Include="Common\Translator.cs" />
+    <Compile Include="Common\TransmissionControllerType.cs" />
+    <Compile Include="Controls\ConsoleOutput\ConsoleOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ConsoleOutput\ConsoleOutput.designer.cs">
+      <DependentUpon>ConsoleOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomScrollbar\ScrollBarArrowButtonState.cs" />
+    <Compile Include="Controls\CustomScrollbar\ScrollBarControlDesigner.cs" />
+    <Compile Include="Controls\CustomScrollbar\ScrollBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomScrollbar\ScrollBarExRenderer.cs" />
+    <Compile Include="Controls\CustomScrollbar\ScrollBarOrientation.cs" />
+    <Compile Include="Controls\CustomScrollbar\ScrollBarState.cs" />
+    <Compile Include="Controls\DgvNumericUpDown\DataGridViewNumericUpDownCell.cs" />
+    <Compile Include="Controls\DgvNumericUpDown\DataGridViewNumericUpDownColumn.cs" />
+    <Compile Include="Controls\DgvNumericUpDown\DataGridViewNumericUpDownEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DraggablePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DraggablePanel.Designer.cs">
+      <DependentUpon>DraggablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExplorerBarPane\ExplorerBarPane.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ExplorerBarPane\ExplorerBarPane.designer.cs">
+      <DependentUpon>ExplorerBarPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Gauges\AGauge\AGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Gauges\AGauge\AGauge.designer.cs">
+      <DependentUpon>AGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Gauges\AnalogGauge\AnalogueGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Gauges\LinearGauge\LinearGauge2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Gauges\LinearGauge\LinearGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Gauges\ThermometerGauge\ThermometerGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\JustPlainBarGauge\JustPlainBarGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\JustPlainBarGauge\JustPlainBarGauge.designer.cs" />
+    <Compile Include="Controls\NiceButton\NiceButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceChunk\NiceChunk.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceComboBox\NiceComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceComboBox\NiceComboBox.designer.cs">
+      <DependentUpon>NiceComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NiceComboBox\NiceComboBoxCustomItem.cs" />
+    <Compile Include="Controls\NiceGraphicalLabel\NiceGraphicalLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceIndicator\NiceIndicator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceIndicator\NiceIndicator.designer.cs">
+      <DependentUpon>NiceIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NicelyAnimatedStringList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NicelyAnimatedStringList.Designer.cs">
+      <DependentUpon>NicelyAnimatedStringList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NicePanel\NicePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceScrollbar\NiceScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceTextBox\NiceTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceTextBox\win32.cs" />
+    <Compile Include="Controls\NiceToolTip\Drawing.cs" />
+    <Compile Include="Controls\NiceToolTip\NiceToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceTrackbar\ColorHelper.cs" />
+    <Compile Include="Controls\NiceTrackbar\DrawNiceStyleHelper.cs" />
+    <Compile Include="Controls\NiceTrackbar\NiceTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NiceTrackbar\NiceTrackBarDesigner.cs" />
+    <Compile Include="Controls\ScrolledPanel\ScrolledPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScrolledPanel\ScrolledPanel.designer.cs">
+      <DependentUpon>ScrolledPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TransparentListBox\TransparentListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TransparentListBox\TransparentListBox.designer.cs">
+      <DependentUpon>TransparentListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VerticalLabel\VerticalLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\VerticalLabel\VerticalLabel.designer.cs">
+      <DependentUpon>VerticalLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VistaButton\ButtonColors.cs" />
+    <Compile Include="Controls\VistaButton\VistaButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\VistaButton\VistaButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBox.designer.cs">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBoxButtons.cs" />
+    <Compile Include="Forms\MessageBoxIcon.cs" />
+    <Compile Include="Forms\MessageBox_DialogResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\CAN_Message.cs" />
+    <Compile Include="Interfaces\PhysicalDevice_CAN.cs" />
+    <Compile Include="Interfaces\TCUGovernor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LinearGauge2_Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CustomScrollbar\ScrollBarEx.resx">
+      <DependentUpon>ScrollBarEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DraggablePanel.resx">
+      <DependentUpon>DraggablePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NiceIndicator\NiceIndicator.resx">
+      <DependentUpon>NiceIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NicelyAnimatedStringList.resx">
+      <DependentUpon>NicelyAnimatedStringList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NiceTextBox\NiceTextBox.resx">
+      <DependentUpon>NiceTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TransparentListBox\TransparentListBox.resx">
+      <DependentUpon>TransparentListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBox.resx">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceIndicator.DefaultIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceButton.DefaultIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceButton.DefaultIconInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_BLACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_clicked_BLACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_clicked_BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_clicked_SILVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_over_BLACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_over_BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_over_SILVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.down_arrow_SILVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.scroll_bgnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.scroll_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.scroll_button_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.scroll_button_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_BLACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_clicked_BLACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_clicked_BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_clicked_SILVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_over_BLACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_over_BLUE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_over_SILVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NiceScrollbar.up_arrow_SILVER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Licensing, Version=16.3460.0.21, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\uiLib\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=22.1460.34.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_critical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MessageBox_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LinearGauge2_Front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LinearGaugeProgress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LinearGauge2_Back_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LinearGauge2_Front_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DTC GM.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

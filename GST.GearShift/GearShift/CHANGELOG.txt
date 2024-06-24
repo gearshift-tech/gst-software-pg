@@ -1,0 +1,108 @@
+version 5.2.7 (2018.04.24)
+	- GM 6L80 control improvements
+version 5.2.2 (2017.07.31)
+	- Dyno RPM fixed in Gearshift Editor
+version 5.2.1 (2017.04.05)
+	- Torque value also controlled from test script for GMLAN transmissions
+version 5.2.0 (2017.04.04)
+	- TPS, Input speed, Output speed, Engine speed now controlled from test script for GMLAN transmissions
+version 5.1.7 (2016.09.02)
+	- VB Suite AO calibration tweak
+version 5.1.6 (2016.02.16)
+	- Loop mode fix
+	- Loop mode works with scripts that have user prompts enabled (they're not displayed)
+version 5.1.5 (2016.02.02)
+	- GM6T40, GM6T70, GM 6L transmission control added!
+	- psi drive value displayed rather than % for 6T/6L transmissions
+	- Advanced GM tab added
+	- Initial test improved for GM transmissions
+version 5.1.2 (2016.01.21)
+	- Full GM6Txx support in GearShift software
+	- Test manager no longer crashes when deleting script lines
+	- Reverse gear properly displayed in Zf6 Control Panel
+	- GM6Txx data displayed in Zf6 Control Panel
+	- GM6Txx Zf6 LEDs support added
+	- RE5 is now controlled from CanCave board, Gearshift freezing fixed
+version 5.0.3 (2015.04.28)
+	- Master data also available in Live data mode
+	- Loop mode bug fixes
+	- Pressure gauges now follow master data correctly
+	- Gear ratios added
+	- Minor visual improvements
+version 5.0.2 (2015.04.20)
+	- Gauges disappearing in auto mode - fixed
+version 5.0.1 (2015.03.13)
+	- Layout optimized for low resolution screens (minimum 1024x768)
+	- Solenoids staying on at the end of the test - fixed
+	- Play/Pause/Stop buttons and scrollbar added to real time data section of report viewer
+	- Numeric pressures displaying correctly in real time section of report viewer
+	- Tooltips added to home screen buttons
+	- Reports are compressed to keep the real time data lightweight
+	- General GUI fixes
+version 4.2.5 (2015.03.09)
+	- Home screen has new layout and graphics
+	- Search bar added for very quick script access
+	- Live playback redone
+	- Reports contain real time data recorded along with the point-oriented old type graph, it can be viewed in Report Viewer
+version 5.0.0 (2015.01.24)
+	- Graphs not printing in reports - fixed
+version 4.2.4 (2015.01.05)
+	- Nissan RE5 control added
+	- 6HPxx names changed, might cause crashes when loading script. Contact support then
+	- Button in menu for restoring control panel
+version 4.2.1 (2014.10.28)
+	- Event mechanism completely re-wired
+	- Test ends automatically at the end of automatic script (fix)
+	- Loop mode for Zf6 - fixed
+	- Loop mode not working - fixed
+	- Loop mode progress bars not working - fixed
+	- Progress bars showing incorrect data - fixed
+	- GearShift firmware update required if any of above fixes do not work
+version 4.2.0 (2014.10.21)
+	- Report files no longer saved to separate folders
+	- Report not showing after test - fixed
+	- Report 'file not found' exception - fixed
+version 4.1.9 (2014.10.17)
+	- After conversion from the old to new file format files are loaded properly (exception patch)
+	- A long delay warning message is displayed when old format reports are converted to the new format
+	- Accesibility bugs fixed for the new file format
+	- Reports after test no longer saved in the old format
+	- Reports not saving on disk - fixed
+	- Gear Up/Down buttons no longer visible in Auto/Loop mode
+	- Zf6 status pane added to Control Panel
+	- Control panel cleared after the test
+	- Auto/Loop mode for Zf6 fix
+version 4.1.5 (2014.08.24)
+	- Zf6 1911 and TU 6HP gearbox models connection problem fixed
+	- Zf6 USB drivers included in installer
+version 4.1.0 (2014.08.05)
+	- USB core update improving stability
+	- Gear change buttons locking fixed
+version 4.0.4 (2014.04.01)
+	- Zf6 gearbox model selection fixed
+version 4.0.3 (2014.04.01)
+	- Bluerech support email updated in application
+	- Zf6 front panel LEDs supported
+version 4.0.2 (2014.03.26)
+	- EDS5 and EDS6 control now available from the script for 6HP gearboxes
+	- Minor bug fixes
+	- Report file performance improvement
+version 4.0.1 (2014.03.04)
+	- Changelog accessible from application GUI
+	- Changelog window appears on the screen once the new version is run for the first time
+	- Channel mismatch when assigning new master data in GearShift Editor - fixed
+	- Obsolete prompt asking the user if he wants to use the master data to fill pass fail - removed
+	- Two report printing options now available, with or without table data
+	- Customer can now define in settings his own logo to be put onto the report when printed
+
+Version 4.0.0 (2014.02.10)
+	- Full Zf6 support from within GearShift software
+	- New report file format intoduced to reduce disk space and improve report exploration
+	- Channels mismatched when displayed on the report graph - fixed
+	- Minor bugfixes and performance improvements
+
+#Changelog started (2014.02.10)
+
+  Copyright 2020 GearShift Technologies
+  Copying and distribution of this file, with or without modification, are
+  permitted provided the copyright notice and this notice are preserved.

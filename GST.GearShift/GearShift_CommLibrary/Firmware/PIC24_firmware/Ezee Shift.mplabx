@@ -1,0 +1,37 @@
+Set oShell = CreateObject ("Wscript.Shell") 
+Set fso = CreateObject("Scripting.FileSystemObject")
+' mplab = oShell.ExpandEnvironmentString("%MPLABX%")
+Set envSystem = oShell.Environment("SYSTEM")
+mplab = envSystem("MPLABX")
+If mplab = "" Then
+  WScript.Echo "You must set up an environment variable named MPLABX that points to your MPLABX installation folder."
+  envSystem("MPLABX") = InputBox("Enter the path to your MPLABX installation folder", "", "C:\Program Files\Microchip\MPLABX")
+  WScript.Quit
+End If
+mplab = mplab & "\mplab_ide\bin\mplab_ide.exe"
+If Not fso.FileExists(mplab) Then
+  WScript.Echo "The script could not find the MPLABX executable at " & vbCrLf & Quote(mplab)
+  WScript.Quit
+End If
+
+Set oFolder = fso.GetFolder(fso.GetParentFolderName(Wscript.ScriptFullName))
+file = ""
+For Each fld in oFolder.SubFolders
+  If file = "" Then
+    If InStr(fld.Name, ".X") Then
+      file = fld
+    End If
+  End If
+Next
+
+strArgs = Quote2(mplab, " ", file)
+oShell.Run strArgs, 0, False
+
+Function Quote(text)
+  Q = """"
+  Quote = Q & text & Q
+End Function
+
+Function Quote2(text1, delim, text2)
+  Quote2 = Quote(text1) & delim & Quote(text2)
+End Function

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	 xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+  <Fragment>
+
+	  <Directory Id="TARGETDIR" Name="SourceDir">
+
+		  <!--Start Menu-->
+		  <Directory Id="ProgramMenuFolder">
+			  <Directory Id="InstallProgramMenuFolder" Name="!(loc.ProductNameFolder)"/>
+
+		  </Directory>
+		  <!--Desktop Shortcut-->
+		  <Directory Id="DesktopFolder" Name="Desktop" />
+
+		  <?if $(var.Platform)=x64?>
+		  <!--Program files (64bit) folder-->
+		  <Directory Id="ProgramFiles64Folder">
+			  <Directory Id="FilesFolder" Name="!(loc.ProductNameFolder)">
+				  <Directory Id="INSTALLFOLDER" Name="GearShift"/>
+			  </Directory>
+		  </Directory>
+		  <?else?>
+		  <!--Program files (32bit) folder-->
+		  <Directory Id="ProgramFilesFolder">
+			  <Directory Id="FilesFolder" Name="!(loc.ProductNameFolder)">
+				  <Directory Id="INSTALLFOLDER" Name="GearShift"/>
+			  </Directory>
+		  </Directory>
+		  <?endif?>
+
+		  <!--AppData Folder-->
+		  <Directory Id="CommonAppDataFolder">
+			  <Directory  Id="CompanyFolder" Name="!(loc.ProductNameFolder)">
+				  <Directory Id="ApplicationDataFolder" Name="GearShift">
+				  </Directory>
+			  </Directory>
+			  <Component Id="CreateAppDataFolder" Guid="67f64153-47fb-4eef-bc52-a5ed12b06c4f">
+				  <CreateFolder>
+					  <util:PermissionEx CreateChild="yes" CreateFile="yes" Delete="yes" Read="yes" ReadAttributes="yes" ReadExtendedAttributes="yes" ReadPermission="yes" Traverse="yes" GenericRead="yes" GenericWrite="yes" User="Everyone" />
+				  </CreateFolder>
+			  </Component>
+
+		  </Directory>
+		  <!--<Directory Id="CommonAppDataFolder">
+			  <Directory Id="CompanyFolder" Name="!(loc.ProductNameFolder)">
+				  <Directory Id="AppDataFolder" Name="GearShift">
+					  <Component Id="CreateAppDataFolder" Guid="f21866dd-93a4-4ab6-b17b-60a0b265d825">
+						  <CreateFolder/>
+					  </Component>
+					  <Directory Id="CAN_Traces" Name="CAN_Traces">
+					  </Directory>
+					  <Directory Id="InstalledGearboxes" Name="Installed Gearboxes">
+					  </Directory>
+					  <Directory Id="OBD_Data" Name="OBD_Data">
+					  </Directory>
+					  <Directory Id="Reports" Name="Reports">
+					  </Directory>
+					  <Directory Id="ResourceData" Name="Resource Data">
+					  </Directory>
+
+				  </Directory>
+			  </Directory>
+		  </Directory>-->
+	  </Directory>
+
+
+  </Fragment>
+
+</Wix>

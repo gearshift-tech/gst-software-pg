@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Component Id="cmpB7AC800E4B5011DFC9EAFFD3DBB1CAA6" Guid="{02A0255C-EBF5-4DB3-B064-9BCA3F8E5AC7}">
+                <File Id="fil16C68E9859CF84D197F97DF9757F599D" KeyPath="yes" Source="$(var.BasePath)\CHANGELOG.txt" />
+            </Component>
+            <Component Id="cmp1FA9FEBE9EEA61FC54B7221E29F33BC4" Guid="{ACB43524-C910-4DF9-8AB3-12BF0F297590}">
+                <File Id="filF83FB44476F95CFBE05CA7748ABF7F31" KeyPath="yes" Source="$(var.BasePath)\GearShift.exe" />
+            </Component>
+            <Component Id="cmpDCE49AEC3CEA11CDEB6D2ACC108D78C9" Guid="{AFD2E02B-5DB9-43A5-8493-99E28E28F52A}">
+                <File Id="fil9A25B55EE522E3790F4EF9492012CEF2" KeyPath="yes" Source="$(var.BasePath)\GearShift.exe.config" />
+            </Component>
+            <Component Id="cmpE90636C8D9D8B22FFE66D842FB930024" Guid="{CB632704-A2B1-4155-869D-BEE2F7D4D3DC}">
+                <File Id="filFA31DCF6BF671DFC08E2933C200B523C" KeyPath="yes" Source="$(var.BasePath)\GearShift.pdb" />
+            </Component>
+            <Component Id="cmp9D39E83795482B39051F3C97886C88DC" Guid="{0D3FA4B7-C605-4758-AE76-5693C716F769}">
+                <File Id="filCF4866BC8080002D35401385D0FE029B" KeyPath="yes" Source="$(var.BasePath)\GearShiftCommLib.dll" />
+            </Component>
+            <Component Id="cmp664E35761B9E11A2689C6D1823284350" Guid="{8A56CFC4-6F0E-4E4E-A0D2-118CFCE94D3E}">
+                <File Id="fil2526597402131255702F16091E7B6D9F" KeyPath="yes" Source="$(var.BasePath)\GST.Gearshift.Components.dll" />
+            </Component>
+            <Component Id="cmp82C73072D34C193C9049C18C3007606C" Guid="{60E2F582-732A-4F02-8481-90D80F4CCC65}">
+                <File Id="fil41DE8BC0A5F4D8E481E9999238544167" KeyPath="yes" Source="$(var.BasePath)\GST.ZF6.Components.dll" />
+            </Component>
+            <Component Id="cmpA1B1DF3E25658385276D302BEA14E565" Guid="{3BF45696-0707-4101-9C8D-9B5698A969E9}">
+                <File Id="fil9A525618F64C62D4C9AE79C02FB4FE38" KeyPath="yes" Source="$(var.BasePath)\Ionic.Zip.dll" />
+            </Component>
+            <Component Id="cmpD3BA871028C0062F7465A000DCAB75CF" Guid="{FAF181C1-265A-4BDD-B48D-33FA50660B2B}">
+                <File Id="fil7681B6F0E0199523ADDB9607541258BC" KeyPath="yes" Source="$(var.BasePath)\LibUsbDotNet.dll" />
+            </Component>
+            <Component Id="cmpFF8ABADB43FE03C15A52FF93F0F26903" Guid="{EB472738-832D-419A-9AE6-878888236185}">
+                <File Id="fil402074B6091242BAE5B53AA8F19604C0" KeyPath="yes" Source="$(var.BasePath)\Soko.CanCave.Components.dll" />
+            </Component>
+            <Component Id="cmp0CD49705A53FA643A8805C576F3D7C6B" Guid="{A9D8DB5C-A612-41DC-A96D-652DDD42ABF6}">
+                <File Id="filEE6EAA6601C4305F55F4CB1D2482240D" KeyPath="yes" Source="$(var.BasePath)\Soko.Common.dll" />
+            </Component>
+            <Component Id="cmpEBBAB14E17CC7C32B71FC0E93FF3D905" Guid="{06D1A9E6-5EB2-4390-A779-7EF4B99F4FD8}">
+                <File Id="fil374CF5CE03070FA9E4F6F3BD771BC397" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Core.WinForms.dll" />
+            </Component>
+            <Component Id="cmp3022508D560005830B0490DBD942887D" Guid="{2671719B-F2A3-4FD0-AA96-CD265036649F}">
+                <File Id="fil880B3E738AA97E915204029DFFEE0093" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Grid.Base.dll" />
+            </Component>
+            <Component Id="cmp7F284BE689EC2B06B9DB7821B0AD811D" Guid="{6ECF93F6-00CA-4B93-9242-B2A823ECBE50}">
+                <File Id="fil85A81E75F8253B98B4162EFBB668B49D" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Grid.Windows.dll" />
+            </Component>
+            <Component Id="cmpBBD3DDD5E65FA0620EA6BF171DB7B53D" Guid="{09F157AF-7766-4EBB-A16F-078FF53756F9}">
+                <File Id="fil3933297AABC878B96E2F92554211A1AA" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Grid.Windows.XmlSerializers.dll" />
+            </Component>
+            <Component Id="cmp04AF36E452EC81D2CA5C47A17B5D9A66" Guid="{A44D4F21-2C3E-4D53-96DB-0758D9A9004C}">
+                <File Id="filA021A26433653B1A0D87B57928A0F017" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Licensing.dll" />
+            </Component>
+            <Component Id="cmpC5F99E7463BF6CDD879050FEEE7B8D24" Guid="{3861E2F5-8B9F-428C-ADA6-02D47EC29986}">
+                <File Id="filAC7094E2E547B85B097141E5CFFA3309" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Shared.Base.dll" />
+            </Component>
+            <Component Id="cmpA1C54EE2BFC8F18B33B4BA61133EEEA7" Guid="{75AE3105-20F7-4CF5-A8B1-37ADB0C8891D}">
+                <File Id="fil612E3F173073F685CE2890C7842EC16B" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Shared.Windows.dll" />
+            </Component>
+            <Component Id="cmpD924608923EECD4852BB1D32C962FC56" Guid="{315EC88B-93F3-49FE-AC95-3B4EA6A0697B}">
+                <File Id="filC9FC88114F4926ED3191D118E68B54E1" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.SpellChecker.Base.dll" />
+            </Component>
+            <Component Id="cmp2151ED09D93C0C76AE32E24252C3FF22" Guid="{45965232-2F3B-49BD-B9C9-A1A1F01EFDCD}">
+                <File Id="filF26CC49A2CCBACFB41EBE71A35ADADDB" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Tools.Base.dll" />
+            </Component>
+            <Component Id="cmp758377E327870894F7D884841E71E241" Guid="{7292D396-4C1D-45DD-8352-B52396AA7328}">
+                <File Id="fil74A606B78C82A49AE4D86B87E7389B9A" KeyPath="yes" Source="$(var.BasePath)\Syncfusion.Tools.Windows.dll" />
+            </Component>
+            <Component Id="cmp9DE2DDF45E74643DD83FF98E1D7C58ED" Guid="{C5E3AD95-7EA5-4EED-AC91-B3F8B16D93F2}">
+                <File Id="fil75AEF742F8EC2321378178AB15345D06" KeyPath="yes" Source="$(var.BasePath)\XPTable.dll" />
+            </Component>
+            <Component Id="cmp5302EB92B68A06653A3B9AB16A750761" Guid="{8F98430A-52D6-4AC0-9DBE-852185D33828}">
+                <File Id="fil084EDC358FFDA67F52CB591C806F16C8" KeyPath="yes" Source="$(var.BasePath)\ZedGraph.dll" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="PublishedComponents">
+            <ComponentRef Id="cmpB7AC800E4B5011DFC9EAFFD3DBB1CAA6" />
+            <ComponentRef Id="cmp1FA9FEBE9EEA61FC54B7221E29F33BC4" />
+            <ComponentRef Id="cmpDCE49AEC3CEA11CDEB6D2ACC108D78C9" />
+            <ComponentRef Id="cmpE90636C8D9D8B22FFE66D842FB930024" />
+            <ComponentRef Id="cmp9D39E83795482B39051F3C97886C88DC" />
+            <ComponentRef Id="cmp664E35761B9E11A2689C6D1823284350" />
+            <ComponentRef Id="cmp82C73072D34C193C9049C18C3007606C" />
+            <ComponentRef Id="cmpA1B1DF3E25658385276D302BEA14E565" />
+            <ComponentRef Id="cmpD3BA871028C0062F7465A000DCAB75CF" />
+            <ComponentRef Id="cmpFF8ABADB43FE03C15A52FF93F0F26903" />
+            <ComponentRef Id="cmp0CD49705A53FA643A8805C576F3D7C6B" />
+            <ComponentRef Id="cmpEBBAB14E17CC7C32B71FC0E93FF3D905" />
+            <ComponentRef Id="cmp3022508D560005830B0490DBD942887D" />
+            <ComponentRef Id="cmp7F284BE689EC2B06B9DB7821B0AD811D" />
+            <ComponentRef Id="cmpBBD3DDD5E65FA0620EA6BF171DB7B53D" />
+            <ComponentRef Id="cmp04AF36E452EC81D2CA5C47A17B5D9A66" />
+            <ComponentRef Id="cmpC5F99E7463BF6CDD879050FEEE7B8D24" />
+            <ComponentRef Id="cmpA1C54EE2BFC8F18B33B4BA61133EEEA7" />
+            <ComponentRef Id="cmpD924608923EECD4852BB1D32C962FC56" />
+            <ComponentRef Id="cmp2151ED09D93C0C76AE32E24252C3FF22" />
+            <ComponentRef Id="cmp758377E327870894F7D884841E71E241" />
+            <ComponentRef Id="cmp9DE2DDF45E74643DD83FF98E1D7C58ED" />
+            <ComponentRef Id="cmp5302EB92B68A06653A3B9AB16A750761" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

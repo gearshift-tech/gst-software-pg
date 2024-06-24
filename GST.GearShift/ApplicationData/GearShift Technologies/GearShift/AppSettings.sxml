@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerializedSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <mainFormWindowState>Maximized</mainFormWindowState>
+  <systemOperators>
+    <string>Default operator</string>
+  </systemOperators>
+  <autoSelectLastOperator>true</autoSelectLastOperator>
+  <lastOperatorName />
+  <RPM_AO_multiplier>0</RPM_AO_multiplier>
+  <Load_AO_multiplier>0</Load_AO_multiplier>
+  <showAutomaticModeWarning>true</showAutomaticModeWarning>
+  <showLoopModeWarning>true</showLoopModeWarning>
+  <oilFilterWearSeconds>0</oilFilterWearSeconds>
+  <oilFilterLifetimeHours>1000</oilFilterLifetimeHours>
+  <oilFilterWearAIIndex>0</oilFilterWearAIIndex>
+  <oilFilterWearAIThreshold>0.1</oilFilterWearAIThreshold>
+  <userFlowUnit>LPM</userFlowUnit>
+  <userPressureUnit>bar</userPressureUnit>
+  <userTemperatureUnit>Celsius</userTemperatureUnit>
+  <userTorqueUnit>Nm</userTorqueUnit>
+  <CompanyInfoPicture_asString />
+</SerializedSettings>

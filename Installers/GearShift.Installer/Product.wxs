@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	 xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+<!--Give product a unique ID per platform-->
+  <?if $(var.Platform)=x64?>
+  <?define ProductCode = "{7F15A819-DD95-4C59-900B-1C9D4865F4CA}"?>
+  <?else?>
+  <?define ProductCode = "{F06F1D02-63FE-4AA6-A245-07FCE32C337D}"?>
+  <?endif?>
+
+  <!--Fixed upgrade ID-->
+  <?define UpgradeCode = "{EF4C9BF6-DC1F-4D33-9849-5C93B37F18E5}"?>
+
+  <?define BuildVersion = 5.2.9?>
+
+  <!--Define main product-->
+	<Product Id="$(var.ProductCode)"
+           Name="!(loc.ProductName_$(var.Platform))"
+           Language="!(loc.Language)"
+           Version="$(var.BuildVersion)"
+           Manufacturer="!(loc.Company)"
+           UpgradeCode="$(var.UpgradeCode)">
+    <!-- Provide package details-->
+		<Package InstallerVersion="200"
+             Compressed="yes"
+             InstallScope="perMachine"
+             Platform="$(var.Platform)"
+             Manufacturer ="!(loc.Company)"
+             Description  ="!(loc.Description)"
+             Keywords ="!(loc.Keywords)"
+             Comments ="!(loc.Comments)"
+             Languages ="!(loc.Language)"
+             />
+
+    <!--Downgrade error message-->
+		<MajorUpgrade AllowDowngrades="no" AllowSameVersionUpgrades="no" DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+
+    <!--Include .cab file into .msi file-->
+		<MediaTemplate
+      EmbedCab ="yes"
+      />
+
+    <!--Define main app icon-->
+    <Icon Id="icon.ico" SourceFile="$(var.GearShift.ProjectDir)\GST_Name.ico"/>
+	<Icon Id="Editoricon.ico" SourceFile="$(var.GearShift.ProjectDir)\Transmission Manager.ico"/>
+    <!--Use the icon.ico icon for this installer (shows in add/Remove programs)-->
+    <Property Id="ARPPRODUCTICON">icon.ico</Property>
+    <!--Help/Support website (shows in the Add/Remove programs)-->
+    <Property Id="ARPURLINFOABOUT">!(loc.WebURL)</Property>
+
+    <!--Create a basic UI for the installer-->
+    <UIRef Id="WixUI_Minimal" />
+
+    <!--Change the installer UI Background-->
+    <WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf"/>
+    <WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\Background.bmp"/>
+    <WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\Banner.bmp"/>
+
+    <!--Define components, shortcuts, files etc... for installer-->
+		<Feature Id="ProductFeature" Title="GearShift" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentGroupRef Id="PublishedComponents" />
+			<ComponentGroupRef Id="AppDataComponents" />
+			<ComponentRef Id="CreateAppDataFolder" />
+		</Feature>
+
+	</Product>
+
+</Wix>

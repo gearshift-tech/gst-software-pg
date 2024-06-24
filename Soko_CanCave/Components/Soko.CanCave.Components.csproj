@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61E875BF-DD96-4D8B-A648-7083A2D565F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Soko.CanCave.Components</RootNamespace>
+    <AssemblyName>Soko.CanCave.Components</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\SimpleTempGauge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SimpleTempGauge.designer.cs">
+      <DependentUpon>SimpleTempGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Gm6T40BarePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Gm6T40BarePanel.Designer.cs">
+      <DependentUpon>Gm6T40BarePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NissanRE5InitPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NissanRE5InitPanel.Designer.cs">
+      <DependentUpon>NissanRE5InitPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GM6TxxInitPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\GM6TxxInitPanel.Designer.cs">
+      <DependentUpon>GM6TxxInitPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GM6TxxLiveDataPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\GM6TxxLiveDataPanel.Designer.cs">
+      <DependentUpon>GM6TxxLiveDataPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\TCUGovernor_NissanRE5.cs" />
+    <Compile Include="Interfaces\TCUGovernor_GM6Txx.cs" />
+    <Compile Include="Interfaces\USB\UsbDevice.cs" />
+    <Compile Include="Interfaces\USB\USBDeviceInfo.cs" />
+    <Compile Include="Interfaces\USB\UsbDevice_BaseCommMethods.cs" />
+    <Compile Include="Interfaces\USB\UsbDevice_CAN.cs" />
+    <Compile Include="Interfaces\USB\UsbDevice_ConnectAsync.cs" />
+    <Compile Include="Interfaces\USB\UsbDevice_DataRx.cs" />
+    <Compile Include="Interfaces\USB\UsbDevice_DataTx.cs" />
+    <Compile Include="Interfaces\USB\USBDevice_DevNotifier.cs" />
+    <Compile Include="Interfaces\USB\USB_Packets.cs" />
+    <Compile Include="Interfaces\USB\USB_Enums.cs" />
+    <Compile Include="Interfaces\USB\USB_Structs.cs" />
+    <Compile Include="Interfaces\TCU_StatusData_GM6Txx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\EventLogger\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\SimpleTempGauge.resx">
+      <DependentUpon>SimpleTempGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Gm6T40BarePanel.resx">
+      <DependentUpon>Gm6T40BarePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NissanRE5InitPanel.resx">
+      <DependentUpon>NissanRE5InitPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GM6TxxInitPanel.resx">
+      <DependentUpon>GM6TxxInitPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GM6TxxLiveDataPanel.resx">
+      <DependentUpon>GM6TxxLiveDataPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MechShifterPanel_Connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MechShifterPanel_Disconnected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLEEP_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\START_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\STOP_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB_64x64_BW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Configure_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CrackCode_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usb_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waiting_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_navigateRight_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_navigateRight_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitialTestPanel_Stop_128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue_BW_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carbonBgnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP OFF_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP ON_96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP_OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP_ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsbLogo_Green_40x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsbLogo_Red_40x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 1 OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 1 ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 2 OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 2 ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 3 OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 3 ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 4 OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 4 ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 5 OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TFP 5 ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ENGINE OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FLUID OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TCM OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Soko.Common\Soko.Common.csproj">
+      <Project>{1a483848-d0a0-44da-9cd7-d0c0f2a7e973}</Project>
+      <Name>Soko.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\ThirdParty\LibWinUsb\LibUsbDotNet.csproj">
+      <Project>{0811c5f3-f00c-4a48-9e1a-c4b4da8cd336}</Project>
+      <Name>LibUsbDotNet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

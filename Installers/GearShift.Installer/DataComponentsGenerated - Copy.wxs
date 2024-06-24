@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="AppDataFolder">
+            <Directory Id="dir7EA33FC7FCDB51ABA779F2C721C0626F" Name="GearShift">
+                <Component Id="cmpC3084FD49F56795C08FA9F98F128FB2F" Guid="{7FBB84D7-2342-4A6A-B29E-9E0D7C6F87A2}">
+                    <File Id="fil288CD5464A931A1D6AC9B6615B02719B" KeyPath="yes" Source="$(var.DataPath)\AppSettings.sxml" />
+                </Component>
+                <Directory Id="dir5FF599C9EA80B0E07890AA2F74D1AE13" Name="CAN_Traces">
+                    <Component Id="cmp96E58803A15FD0DC372B676ECC779E3F" Guid="{0145A5D7-563B-431E-B630-477E17F0FAB2}">
+                        <File Id="fil5DE98AA453CA7689A411F4A3E93E167B" KeyPath="yes" Source="$(var.DataPath)\CAN_Traces\Example.ezt" />
+                    </Component>
+                </Directory>
+                <Directory Id="dir4FFC78343D5C3DDFF5BF41174D123A16" Name="Installed gearboxes">
+                    <Directory Id="dirA312929D9D1EF34B1AE91B5CBB67CBDF" Name="NegativeSwitchExample">
+                        <Component Id="cmp2037FF853AFAD36E5A56570989E5F491" Guid="{7F951FAD-6C5E-41EE-BED4-F129EF00BE3F}">
+                            <File Id="fil32554F247C67B6EF4B27C213D0E70D9B" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\NegativeSwitchExample\Negative Switch Example.tsc" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirA25043BF963074B3A9E50E4BD8E93AB5" Name="PositiveSwitchExample">
+                        <Component Id="cmp545965C7D1ED6C3ADC56839ED2D1B786" Guid="{C7DC191D-63B2-40AC-9C7B-87755EFF75B7}">
+                            <File Id="filD4D88542B5DF520BF3627BC324EC735D" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\PositiveSwitchExample\Positive Switch Example.tsc" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirF9BC6E394AC4558023312F5B7954E19F" Name="ZF_6HPxx_1911E">
+                        <Component Id="cmp44E18B9A43AF4A5F3512C8F700713D5F" Guid="{E3A2FCC2-71E6-4D61-B308-4CE33E1489A0}">
+                            <File Id="fil3D4AFEFDDCEA1CF8732AE66B3075C118" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\ZF_6HPxx_1911E\ZF_6HPxx_1911E.tsc" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir510876DED915681A4940F2454BE6E0E5" Name="ZF_6HPxx_1911M">
+                        <Component Id="cmp331A3A6A0B0A45220530EB29E0397313" Guid="{C89462C3-476E-4581-B41C-90BAA03B6AD3}">
+                            <File Id="filA3F520DB972D55C2B49540D400FDBBDB" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\ZF_6HPxx_1911M\ZF_6HPxx_1911M.tsc" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir89BFB4C191B9E6CB9A50D2FC44D69989" Name="ZF_6HPxx_CE">
+                        <Component Id="cmp2BCD8E2630F5D2A4A535BD62BC2D7FFB" Guid="{9B3518E4-4ADA-48A0-8BC0-EA5F6331C2D0}">
+                            <File Id="fil4722B748502272C09215369D158B3259" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\ZF_6HPxx_CE\ZF_6HPxx_CE.tsc" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir7B6B2AE7D71D1784746F6DE48CEDB0C5" Name="ZF_6HPxx_CM">
+                        <Component Id="cmpDE2D193C689ACEE23E00DDDCE5303653" Guid="{F6A49014-6B26-4427-B8D0-826A3780685B}">
+                            <File Id="fil012B44657D88C66D69600B486356E9E9" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\ZF_6HPxx_CM\ZF_6HPxx_CM.tsc" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dirD6008A237789AA15489FFD719738A870" Name="ZF_6HPxx_TUCE">
+                        <Component Id="cmpE77C921CE1EDD882B68A3AA062DB12FB" Guid="{64E9AE4E-4F07-49B8-B841-9C5908FA2FBF}">
+                            <File Id="filF7B84EFB1CBAFE704C98D82B975F6456" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\ZF_6HPxx_TUCE\ZF_6HPxx_TUCE.tsc" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir088D52018F267E9796107581D03CDC4D" Name="ZF_6HPxx_TUCM">
+                        <Component Id="cmp624BE577AB52A6AE7A647612ED93D000" Guid="{EF016FD1-B259-4C74-84E3-7F8C7C40B040}">
+                            <File Id="fil7B7EA10ECBF1B9C234E690FAD6F6B316" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\ZF_6HPxx_TUCM\ZF_6HPxx_TUCM.tsc" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir509E61C14CFF42055CD25E4AB4485EF1" Name="ZF_6HPxx_WM">
+                        <Component Id="cmpD11316601493A9790224FC3B9061DEEC" Guid="{1A59C18D-6F84-480C-977D-076668EAE47B}">
+                            <File Id="fil4695F18D5C228445B1E281874F494842" KeyPath="yes" Source="$(var.DataPath)\Installed gearboxes\ZF_6HPxx_WM\ZF_6HPxx_WM.tsc" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir8FEFE26972C6F0125B813FBEBED62D75" Name="OBD_Data">
+                    <Directory Id="dir3F0856DC36FB8667E448B4F999C1CE20" Name="Troublecodes">
+                        <Component Id="cmpD0B701C788D32E436A39B9DCC41164BA" Guid="{56E4A651-3278-4CD7-86E1-1C78F569F061}">
+                            <File Id="filDA3841AB74CA8AA88EB1CDDB517B2018" KeyPath="yes" Source="$(var.DataPath)\OBD_Data\Troublecodes\POWERTRAIN_CHRYSLER.tcl" />
+                        </Component>
+                        <Component Id="cmpC4C237321AC7A3D2D13201CB79E3B5AC" Guid="{39F1777F-867C-46E1-8A2B-9E14B9995C8E}">
+                            <File Id="filBB9054F28CB9726A9AE4A251787703B1" KeyPath="yes" Source="$(var.DataPath)\OBD_Data\Troublecodes\POWERTRAIN_DTC.tcl" />
+                        </Component>
+                        <Component Id="cmp8B1C403F6AF96546D3911178F1DFBFCC" Guid="{EEE802F3-DA43-49F9-B419-749138620E33}">
+                            <File Id="fil8E69B8B9AC1BDA25D6F3200949892E19" KeyPath="yes" Source="$(var.DataPath)\OBD_Data\Troublecodes\POWERTRAIN_FORD.tcl" />
+                        </Component>
+                        <Component Id="cmp7B012383706416E1CD781F011261E00A" Guid="{36BAFA7C-6DDE-4DD5-9AEB-2FBF6E0A4471}">
+                            <File Id="filD63BD24907BC628525ACDCAA19D7DC4F" KeyPath="yes" Source="$(var.DataPath)\OBD_Data\Troublecodes\POWERTRAIN_GM.tcl" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="AppDataComponents">
+            <ComponentRef Id="cmpC3084FD49F56795C08FA9F98F128FB2F" />
+            <ComponentRef Id="cmp96E58803A15FD0DC372B676ECC779E3F" />
+            <ComponentRef Id="cmp2037FF853AFAD36E5A56570989E5F491" />
+            <ComponentRef Id="cmp545965C7D1ED6C3ADC56839ED2D1B786" />
+            <ComponentRef Id="cmp44E18B9A43AF4A5F3512C8F700713D5F" />
+            <ComponentRef Id="cmp331A3A6A0B0A45220530EB29E0397313" />
+            <ComponentRef Id="cmp2BCD8E2630F5D2A4A535BD62BC2D7FFB" />
+            <ComponentRef Id="cmpDE2D193C689ACEE23E00DDDCE5303653" />
+            <ComponentRef Id="cmpE77C921CE1EDD882B68A3AA062DB12FB" />
+            <ComponentRef Id="cmp624BE577AB52A6AE7A647612ED93D000" />
+            <ComponentRef Id="cmpD11316601493A9790224FC3B9061DEEC" />
+            <ComponentRef Id="cmpD0B701C788D32E436A39B9DCC41164BA" />
+            <ComponentRef Id="cmpC4C237321AC7A3D2D13201CB79E3B5AC" />
+            <ComponentRef Id="cmp8B1C403F6AF96546D3911178F1DFBFCC" />
+            <ComponentRef Id="cmp7B012383706416E1CD781F011261E00A" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>
